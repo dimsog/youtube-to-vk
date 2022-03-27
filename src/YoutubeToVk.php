@@ -16,22 +16,22 @@ class Transfer
         $this->vkAccessToken = $vkAccessToken;
     }
 
-    public function toGroupVideos(string $youtubeVideoLink, int $groupId)
+    public function toGroupVideos(string $youtubeVideoLink, string $groupLink)
     {
 
     }
 
-    public function toGroupWall(string $youtubeVideoLink, int $groupId)
+    public function toGroupWall(string $youtubeVideoLink, string $groupLink)
     {
 
     }
 
-    private function toUser(string $youtubeVideoLink, int $userId)
+    private function toUser(string $youtubeVideoLink, string $userLink)
     {
 
     }
 
-    public function toUserWall(string $youtubeVideoLink, int $userId)
+    public function toUserWall(string $youtubeVideoLink, string $userLink)
     {
 
     }
