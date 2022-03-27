@@ -10,10 +10,13 @@ class Transfer
 {
     private string $vkAccessToken;
 
+    private VKApiClient $vkApiClient;
+
 
     public function __construct(string $vkAccessToken)
     {
         $this->vkAccessToken = $vkAccessToken;
+        $this->vkApiClient = new VKApiClient();
     }
 
     public function toGroupVideos(string $youtubeVideoLink, string $groupLink)
