@@ -14,7 +14,7 @@
 ```php
 use Dimsog\YoutubeToVk\YoutubeToVk;
 $clientId = 123456;
-YoutubeToVk::generateVkAccessTokenLink($clientId)
+echo YoutubeToVk::generateVkAccessTokenLink($clientId)
 ```
 
 ### Использование
