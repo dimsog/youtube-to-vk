@@ -18,7 +18,8 @@
   "require": {
     "php": ">=7.4",
     "norkunas/youtube-dl-php": "dev-master",
-    "vkcom/vk-php-sdk": "^5.101"
+    "vkcom/vk-php-sdk": "^5.101",
+    "guzzlehttp/guzzle": "^7.4"
   },
   "autoload": {
     "psr-4": {
