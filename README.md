@@ -56,7 +56,7 @@ use Dimsog\YoutubeToVk\YoutubeVideoList;
 
 $youtubeVideoList = new YoutubeVideoList("youtube_api_key");
 
-// можно указывать как id канала так и его userName
+// можно указывать как id канала, так и его userName
 $youtubeVideoList->getVideosFromChannel('EmpathyTest');
 $youtubeVideoList->getVideosFromChannel('UCKZC###2ND###t-jY###A#hA');
 
