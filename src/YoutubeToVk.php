@@ -117,7 +117,7 @@ class YoutubeToVk
             return $this->groupsCache[$groupLink];
         }
 
-        $groupId = $this->removeDomainFromLink($groupLink);
+        $groupId = $this->removeHostFromLink($groupLink);
         $response = $this->vkApiClient->groups()->getById($this->vkAccessToken, [
             'group_id' => $groupId
         ]);
@@ -125,7 +125,7 @@ class YoutubeToVk
         return $response[0]['id'];
     }
 
-    private function removeDomainFromLink(string $vkLink): string
+    private function removeHostFromLink(string $vkLink): string
     {
         return str_replace([
             'https://vk.com/',
