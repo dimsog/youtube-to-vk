@@ -61,3 +61,18 @@ $youtubeVideoList->getVideosFromChannel('EmpathyTest');
 $youtubeVideoList->getVideosFromChannel('UCKZC###2ND###t-jY###A#hA');
 
 ```
+
+### Как скачать все видео с определенного канала?
+```php
+
+use Dimsog\YoutubeToVk\YoutubeToVk;
+use Dimsog\YoutubeToVk\YoutubeVideoList;
+
+$youtubeVideoList = new YoutubeVideoList("youtube_api_key");
+$youtubeToVk = new YoutubeToVk('vk_access_token');
+
+foreach ($youtubeVideoList->getVideosFromChannel('channelId') as $video) {
+    $youtubeToVk->toGroup($video, 'https://vk.com/group_link_here');
+}
+
+```
