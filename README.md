@@ -31,7 +31,7 @@ $youtubeToVk->toUser('https://www.youtube.com/watch?v=XXXXXX');
 ```
 
 ### YoutubeDl
-Вам полностью доступен инстанс YoutubeDl. Это особенно полезно, если нужно показывать прогресс скачивания видео с VK (код взять из официальной документации к [youtube-dl-php](https://github.com/norkunas/youtube-dl-php)):
+Вам полностью доступен инстанс YoutubeDl. Это особенно полезно, если нужно показывать прогресс скачивания видео с VK (код взят из официальной документации к [youtube-dl-php](https://github.com/norkunas/youtube-dl-php)):
 ```php
 $youtubeToVk->getYoutubeDl()->onProgress(static function (?string $progressTarget, string $percentage, ?string $size, ?string $speed, ?string $eta, ?string $totalTime): void {
     echo date("H:i:s") . ", $percentage; Size: $size";
