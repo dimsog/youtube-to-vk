@@ -6,7 +6,7 @@
 ### Требования
 1. PHP 7.4+
 2. Python3 (для youtube-dl или yt-dlp)
-3. Установленный на сервере [youtube-dl](https://github.com/ytdl-org/youtube-dl) или [yt-dlp](https://github.com/yt-dlp/yt-dlp) (у автора скорость скачивания была выше). Это тебуется для youtube-dl-php.
+3. Установленный на сервере [youtube-dl](https://github.com/ytdl-org/youtube-dl) или [yt-dlp](https://github.com/yt-dlp/yt-dlp) (у автора скорость скачивания была выше). Это необходимо для youtube-dl-php.
 
 ### Перед использованием
 Наличие VK access token обязательно. Вы можете получить ссылку на получение токена с помощью следующего метода:
@@ -45,7 +45,7 @@ $youtubeToVk->getYoutubeDl()->onProgress(static function (?string $progressTarge
 });
 ```
 
-Если вы используете yt-dlp, то пропишите к ней путь:
+Если вы используете yt-dlp, пропишите к ней путь:
 ```php
 $youtubeToVk->getYoutubeDl()->setBinPath('/usr/local/bin/yt-dlp');
 ```
