@@ -63,7 +63,7 @@ class YoutubeToVk
         return $this->uploadVideoToVk($youtubeVideoLink);
     }
 
-    private function uploadVideoToVk(string $youtubeVideoLink, ?int $groupId = null)
+    private function uploadVideoToVk(string $youtubeVideoLink, ?int $groupId = null): int
     {
         $video = $this->downloadVideo($youtubeVideoLink);
         $vkVideo = $this->vkApiClient->getRequest()->upload(
