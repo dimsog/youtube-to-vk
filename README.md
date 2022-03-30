@@ -49,3 +49,15 @@ $youtubeToVk->getYoutubeDl()->onProgress(static function (?string $progressTarge
 ```php
 $youtubeToVk->getYoutubeDl()->setBinPath('/usr/local/bin/yt-dlp');
 ```
+
+### Как получить список всех видео?
+```php
+use Dimsog\YoutubeToVk\YoutubeVideoList;
+
+$youtubeVideoList = new YoutubeVideoList("youtube_api_key");
+
+// можно указывать как id канала так и его userName
+$youtubeVideoList->getVideosFromChannel('EmpathyTest');
+$youtubeVideoList->getVideosFromChannel('UCKZC###2ND###t-jY###A#hA');
+
+```
