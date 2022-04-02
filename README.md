@@ -1,5 +1,5 @@
 # YoutubeToVk
-Библиотека для переноса видео с Youtube в группу или на страницу пользователя.
+Библиотека для переноса видео с Youtube в группу VK или на страницу пользователя.
 
 Эта библиотека использует [youtube-dl-php](https://github.com/norkunas/youtube-dl-php) и [vk-php-sdk](https://github.com/VKCOM/vk-php-sdk).
 
