@@ -76,3 +76,12 @@ foreach ($youtubeVideoList->getVideosFromChannel('channelId') as $video) {
 }
 
 ```
+
+### Возможные ошибки
+В процессе переноса почти 30 000 видео с Youtube в VK, я столкнулся с некоторыми исключениями:
+```code
+Uncaught VK\Exceptions\VKClientException: Invalid http status: 500
+Uncaught VK\Exceptions\VKApiException: Upload error: Getting upload URL error
+```
+
+Отлавливайте эти ошибки в клиентском коде.
