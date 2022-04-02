@@ -8,6 +8,11 @@
 2. Python3 (для youtube-dl или yt-dlp)
 3. Установленный на сервере [youtube-dl](https://github.com/ytdl-org/youtube-dl) или [yt-dlp](https://github.com/yt-dlp/yt-dlp) (у автора скорость скачивания была выше). Это необходимо для youtube-dl-php.
 
+### Установка
+```bash
+composer require dimsog/youtube-to-vk
+```
+
 ### Перед использованием
 Наличие VK access token обязательно. Вы можете получить ссылку на получение токена с помощью следующего метода:
 
