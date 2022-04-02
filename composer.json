@@ -1,0 +1,29 @@
+{
+  "name": "dimsog/youtube-to-vk",
+  "description": "Transfer video from youtube to vk",
+  "keywords": ["youtube", "vk", "video", "transfer"],
+  "type": "library",
+  "license": "MIT",
+  "support": {
+    "issues": "https://github.com/dimsog/youtube-to-vk/issues",
+    "source": "https://github.com/dimsog/youtube-to-vk"
+  },
+  "authors": [
+    {
+      "name": "Dmitry R",
+      "email": "dimsog@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=7.4",
+    "norkunas/youtube-dl-php": "dev-master",
+    "vkcom/vk-php-sdk": "^5.101",
+    "guzzlehttp/guzzle": "^7.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Dimsog\\YoutubeToVk\\": "src"
+    }
+  }
+}
