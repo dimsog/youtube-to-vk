@@ -3,7 +3,7 @@
   "description": "Transfer video from youtube to vk",
   "keywords": ["youtube", "vk", "video", "transfer"],
   "type": "library",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "support": {
     "issues": "https://github.com/dimsog/youtube-to-vk/issues",
@@ -18,7 +18,7 @@
   "minimum-stability": "stable",
   "require": {
     "php": ">=7.4",
-    "norkunas/youtube-dl-php": "dev-master",
+    "norkunas/youtube-dl-php": "^2.1",
     "vkcom/vk-php-sdk": "^5.101",
     "guzzlehttp/guzzle": "^7.4"
   },
